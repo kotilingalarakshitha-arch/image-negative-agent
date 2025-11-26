@@ -1,3 +1,4 @@
+// --- add text here --- //
 from agno.agent import Agent
 from PIL import Image, ImageOps
 import io
@@ -24,3 +25,4 @@ agent = Agent(
     tools=[make_negative],
     model=None   # 👈 ensures no OpenAI calls
 )
+
