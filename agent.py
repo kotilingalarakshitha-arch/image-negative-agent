@@ -1,8 +1,9 @@
+// --- Text to type --- //
 from agno.agent import Agent
 from PIL import Image, ImageOps
 import io
 
-# Define a plain Python function (no @tool)
+# Define a plain Python function (no @tool) #
 def make_negative(image_bytes: bytes) -> bytes:
     """Takes an image and returns its negative (inverted colors)."""
     with Image.open(io.BytesIO(image_bytes)) as img:
@@ -24,3 +25,4 @@ agent = Agent(
     tools=[make_negative],
     model=None   # 👈 ensures no OpenAI calls
 )
+
