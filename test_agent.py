@@ -10,7 +10,8 @@ result = make_negative(img_bytes)
 # Save the output #
 with open("negative.png", "wb") as f:
     f.write(result)
-
+# add text #
 print("✅ Negative image saved as negative.png")
+
 
 
